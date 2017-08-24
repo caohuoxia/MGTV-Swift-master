@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="197" id="KGk-i7-Jjw" customClass="SuggestTemplateCell" customModule="MGTV_Swift" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="313"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="312"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="QQ9-cL-JUu">
+                        <rect key="frame" x="3" y="5" width="314" height="137"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D3u-GL-p1X" customClass="BaseView169" customModule="MGTV_Swift" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="155.5" height="137"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1ga-1n-srx" customClass="BaseView169" customModule="MGTV_Swift" customModuleProvider="target">
+                                <rect key="frame" x="158.5" y="0.0" width="155.5" height="137"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="1ga-1n-srx" firstAttribute="width" secondItem="D3u-GL-p1X" secondAttribute="width" id="HBm-0A-7i9"/>
+                            <constraint firstItem="1ga-1n-srx" firstAttribute="height" secondItem="D3u-GL-p1X" secondAttribute="height" id="dWh-5x-x61"/>
+                        </constraints>
+                    </stackView>
+                    <stackView opaque="NO" contentMode="scaleToFill" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="4Vh-sK-rr1">
+                        <rect key="frame" x="3" y="159" width="312" height="136.5"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bwl-W8-M2F" customClass="BaseView169" customModule="MGTV_Swift" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="154.5" height="136.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g8p-iC-hJT" customClass="BaseView169" customModule="MGTV_Swift" customModuleProvider="target">
+                                <rect key="frame" x="157.5" y="0.0" width="154.5" height="136.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="g8p-iC-hJT" firstAttribute="height" secondItem="bwl-W8-M2F" secondAttribute="height" id="3JK-57-UpZ"/>
+                            <constraint firstItem="g8p-iC-hJT" firstAttribute="width" secondItem="bwl-W8-M2F" secondAttribute="width" id="HAS-Sv-g6S"/>
+                        </constraints>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="QQ9-cL-JUu" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="6l3-Kc-o2F"/>
+                    <constraint firstItem="QQ9-cL-JUu" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="3" id="AEC-qg-wci"/>
+                    <constraint firstAttribute="bottom" secondItem="4Vh-sK-rr1" secondAttribute="bottom" constant="17" id="VwE-dL-ezg"/>
+                    <constraint firstItem="4Vh-sK-rr1" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="3" id="e58-CS-jTt"/>
+                    <constraint firstItem="4Vh-sK-rr1" firstAttribute="top" secondItem="QQ9-cL-JUu" secondAttribute="bottom" constant="17" id="lQo-pP-q5B"/>
+                    <constraint firstItem="4Vh-sK-rr1" firstAttribute="height" secondItem="QQ9-cL-JUu" secondAttribute="height" id="mhR-Og-v6M"/>
+                    <constraint firstAttribute="trailing" secondItem="4Vh-sK-rr1" secondAttribute="trailing" constant="5" id="qYB-vn-AWZ"/>
+                    <constraint firstAttribute="trailing" secondItem="QQ9-cL-JUu" secondAttribute="trailing" constant="3" id="vGE-TT-fgg"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outletCollection property="baseViews" destination="D3u-GL-p1X" collectionClass="NSMutableArray" id="BFU-A7-eaU"/>
+                <outletCollection property="baseViews" destination="1ga-1n-srx" collectionClass="NSMutableArray" id="1y8-I5-Pu6"/>
+                <outletCollection property="baseViews" destination="bwl-W8-M2F" collectionClass="NSMutableArray" id="GAj-73-Ylc"/>
+                <outletCollection property="baseViews" destination="g8p-iC-hJT" collectionClass="NSMutableArray" id="5Xr-AV-eze"/>
+            </connections>
+            <point key="canvasLocation" x="53" y="-64"/>
+        </tableViewCell>
+    </objects>
+</document>
